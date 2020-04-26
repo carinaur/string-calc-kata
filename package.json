@@ -1,0 +1,26 @@
+{
+  "name": "stringcalc",
+  "version": "1.0.0",
+  "description": "Carina Auer stringcalc übung",
+  "main": "code.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carinaur/string_calc_kata.git"
+  },
+  "author": "Carina Auer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carinaur/string_calc_kata/issues"
+  },
+  "homepage": "https://github.com/carinaur/string_calc_kata#readme",
+  "dependencies": {
+    "jest": "^25.4.0",
+    "jest-cli": "^25.4.0"
+  }
+}

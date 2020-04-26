@@ -1,0 +1,1 @@
+create string calc kate as an exercise
