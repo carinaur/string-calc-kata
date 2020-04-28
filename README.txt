@@ -1,1 +1,1 @@
-create string calc kate as an exercise
+create string calc kata as an exercise
