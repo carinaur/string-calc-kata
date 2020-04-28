@@ -1,8 +1,14 @@
-var stringCalc = require('../stringcalc');
+const{stringCalc} = require('../stringcalc');
 
-describe("stringCalc()", () =>{
-    it("should return zero",() => {
-     expect(stringCalc()).toBe(0)
-    });
+describe("stringCalc", () =>{
+    [
+        { input: '', output: 0 },
+        { input: '1', output: 1 },
+        { input: '1,2', output: 3 },
+    ].forEach(({input, output}) => {
+        it(`should return ${output} on input "${input}"`, () => {
+            expect(stringCalc(input)).toEqual(output)
+        })
+    })
 
 });
