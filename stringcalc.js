@@ -1,29 +1,20 @@
 const stringCalc=(text) => {
     const strList = text.split(',');
 
-    if (strList[0].length === 0){
-        var firstNum = 0;
-    }
-    else {
-        var firstNum = parseInt(strList[0], 10);
-    }
-    
-    //statement can be replaced with (cond)?"":"" to shorten code
-    if (strList[1]) {
-        if (strList[1].length === 0){
-            var secondNum = 0;
-        }
+    const numList = strList.map((str) => { 
+        return parseInt(str, 10)   //returns number value in the given number system
+    })
+    const clearedNumlist = numList.filter((num) => {
+        return !isNaN(num); //filters values that are NaN
+    })
 
-        else{
-            var secondNum = parseInt(strList[1], 10);
-        }
+    var result = 0;
 
-    } else {
-        secondNum = 0;
-    }
-
-    return firstNum + secondNum;
-};
+    clearedNumlist.forEach((num) => {
+        result = result + num;
+    })
+    return result;
+}
 
     
 module.exports = {stringCalc}
